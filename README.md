@@ -77,9 +77,11 @@ Erstelle eine Datei `.NameToUnix.conf` im Arbeitsverzeichnis mit folgendem Inhal
 
 ## Test
 
-Im Verzeichnis ./test gibt es ein bash-Skript 'create_test_tree.sh', das lokal 21 Test-Verzeichnisse 
-und 400 Dateien mit skurrilen Zufallsnamen erzeugt. Damit kannst Du 'NameToUnix' ausprobieren 
-(Anleitung in 'Infotext.txt').
+Im Verzeichnis [***./test***](./test) gibt es ein bash-Skript [***create_test_tree.sh***](test/create_test_tree.sh), das lokal 21 Test-Verzeichnisse und 400 Dateien mit skurrilen Zufallsnamen erzeugt. Damit kannst Du ***NameToUnix*** ausprobieren:
+ 
+***NameToUnix -n ./testverzeichnis*** (nur Anzeige der Änderungen)
+oder
+***NameToUnix ./testverzeichnis*** (Anzeige mit Umbenennen).
 
 ## Lizenz
 
