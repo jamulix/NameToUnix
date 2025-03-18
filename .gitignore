@@ -1,9 +1,0 @@
-/target/*
-**/*.rs.bk
-Cargo.lock
-.idea/
-.vscode/
-*.swp
-*.swo
-.DS_Store
-/testverzeichnis/
