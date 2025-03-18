@@ -1,7 +1,7 @@
 # Dateinamen-Reparatur-Tool "NameToUnix"
 
 Ein leistungsstarkes Kommandozeilen-Tool zum Bereinigen von Dateinamen gemäß Linux-Konventionen.
-Es funktioniert unter Linux (und MacOS, nicht getestet). 
+Es funktioniert unter Linux (und auch unter MacOS, dort habe ich es aber noch nicht getestet). 
 
 (c) 2025 Dieter Schlüter <dieter.schlueter@linix.de>
 
@@ -74,6 +74,12 @@ Erstelle eine Datei `.NameToUnix.conf` im Arbeitsverzeichnis mit folgendem Inhal
 "ü" = "ue"
 "ß" = "ss"
 ```
+
+## Test
+
+Im Verzeichnis ./test gibt es ein bash-Skript 'create_test_tree.sh', das lokal 21 Test-Verzeichnisse 
+und 400 Dateien mit skurrilen Zufallsnamen erzeugt. Damit kannst Du 'NameToUnix' ausprobieren 
+(Anleitung in 'Infotext.txt').
 
 ## Lizenz
 
