@@ -77,6 +77,36 @@ Erstelle eine Datei `.NameToUnix.conf` im Arbeitsverzeichnis mit folgendem Inhal
 "ß" = "ss"
 ```
 
+### Verwendung von NameToUnix
+
+Um die Verwendung von `NameToUnix` zu verstehen, kannst du die folgende Hilfe ausgeben:
+
+```text
+NameToUnix --help
+```
+
+Die Ausgabe sieht wie folgt aus:
+
+```text
+Ein Tool zum Anpassen von Verzeichnis- und Dateinamen an Linux-Konventionen
+
+Usage: NameToUnix [OPTIONS] [PATHS]...
+
+Arguments:
+[PATHS]... Pfade (Dateien und Verzeichnisse) zum rekursiven Anpassen
+
+Options:
+-q, --quiet Ausgaben unterdrücken (keine Umbenennungsinfos auf stdout)
+-n, --no-changes Nur anzeigen, aber keine realen Änderungen vornehmen
+-f, --force Existierende Dateien überschreiben
+-e, --exclude <PATTERN> Zu ignorierende Muster (-e "*.py", mehrere können angegeben werden)
+-v, --verbose Ausführliche Debug-Informationen
+    --modify-root Erlaubt, auch das Wurzelverzeichnis anzupassen
+-h, --help Print help
+-V, --version Print version
+
+```
+
 ## Test
 
 Im Verzeichnis [***./test***](./test) gibt es ein bash-Skript [***create_test_tree.sh***](test/create_test_tree.sh), das lokal 21 Test-Verzeichnisse und 400 Dateien mit skurrilen Zufallsnamen erzeugt. Damit kannst Du ***NameToUnix*** ausprobieren:
