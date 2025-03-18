@@ -1,0 +1,17 @@
+NameToUnix/
+├── Cargo.toml               # Projektmetadaten und Abhängigkeiten
+├── Cargo.lock               # Exakte Versionen der Abhängigkeiten (automatisch generiert)
+├── .gitignore               # Dateien, die von Git ignoriert werden sollen
+├── .NameToUnix.conf         # Konfigurationsdatei (Übersetzungsregeln: 'foo' = 'bar')
+├── README.md                # Projektdokumentation
+├── CONTRIBUTING.md          # Contribute-Dokumentation
+├── .github/                 # CI/CD und GitHub-spezifische Dateien
+│   └── workflows/
+│       └── build.yml        # GitHub Actions Workflow für Build and Release
+├── src/                     # Quellcode-Verzeichnis
+│   ├── main.rs              # Haupteinstiegspunkt (bereits vorhanden)
+│   ├── cli.rs               # CLI-Argumente und Parsing
+│   ├── config.rs            # Konfigurationsverwaltung
+│   └── sanitizer.rs         # Kernlogik zur Dateinamenbereinigung
+└── LICENSE                  # Lizenzinformationen
+

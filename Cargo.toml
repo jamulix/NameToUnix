@@ -1,0 +1,63 @@
+[package]
+name = "NameToUnix"
+version = "0.1.0"
+edition = "2021"
+authors = ["Dieter Schlüter <dieter.schlueter@linix.de>"]
+description = "Ein Tool zum Anpassen von Verzeichnis- und Dateinamen an Linux-Konventionen"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/jamulix/NameToUnix"
+keywords = ["filesystem", "rename", "sanitize", "cli"]
+categories = ["command-line-utilities", "filesystem"]
+
+[dependencies]
+# Bereits verwendete Abhängigkeiten
+clap = { version = "4.5.27", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8.11"
+walkdir = "2.4.0"
+glob = "0.3.1"
+unicode-segmentation = "1.10.0"
+emojis = "0.6.1"
+regex = "1.10.3"
+dirs = "5.0.1"
+
+# Neue empfohlene Abhängigkeiten
+anyhow = "1.0.80"           # Verbesserte Fehlerbehandlung
+thiserror = "1.0.57"        # Typisierte Fehler
+once_cell = "1.19.0"        # Lazy-Initialisierung für statische Werte
+rayon = "1.9.0"             # Parallelverarbeitung
+indicatif = "0.17.7"        # Fortschrittsbalken
+env_logger = "0.11.2"       # Logging-Framework
+log = "0.4.21"              # Logging-Abstraktionen
+itertools = "0.12.1"        # Erweiterte Iterator-Funktionalität
+
+[dev-dependencies]
+tempfile = "3.10.1"         # Temporäre Dateien für Tests
+assert_fs = "1.1.1"         # Dateisystem-Assertions für Tests
+predicates = "3.1.0"        # Prädikate für Tests
+
+[profile.release]
+lto = true                  # Link-Time-Optimierung
+codegen-units = 1           # Optimierung für Binärgröße
+opt-level = 3               # Maximale Optimierung
+panic = "abort"             # Kleinere Binärdatei durch Abbrechen bei Panic
+strip = true                # Entfernen von Debug-Symbolen
+
+[package.metadata.deb]
+maintainer = "Dieter Schlüter <dieter.schlueter@linix.de>"
+copyright = "2025, Dieter Schlüter"
+license-file = ["LICENSE", "4"]
+extended-description = """
+NameToUnix ist ein Kommandozeilen-Tool zum Umbenennen von Dateien und Verzeichnissen,
+um sie mit Linux-Dateinamen-Konventionen kompatibel zu machen. Es ersetzt Leerzeichen und
+Sonderzeichen durch Unterstriche und konvertiert deutsche Umlaute in ihre ASCII-Pendants.
+"""
+depends = "$auto"
+section = "utils"
+priority = "optional"
+assets = [
+    ["target/release/NameToUnix", "usr/bin/", "755"],
+    ["README.md", "usr/share/doc/NameToUnix/README", "644"],
+]
+
