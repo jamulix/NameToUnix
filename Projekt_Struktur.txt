@@ -7,7 +7,7 @@ NameToUnix/
 ├── CONTRIBUTING.md          # Contribute-Dokumentation
 ├── .github/                 # CI/CD und GitHub-spezifische Dateien
 │   └── workflows/
-│       └── build.yml        # GitHub Actions Workflow für Build and Release
+│       └── build.yaml        # GitHub Actions Workflow für Build and Release
 ├── src/                     # Quellcode-Verzeichnis
 │   ├── main.rs              # Haupteinstiegspunkt (bereits vorhanden)
 │   ├── cli.rs               # CLI-Argumente und Parsing
