@@ -1,4 +1,4 @@
-# Filename Sanitizer
+# Dateinamen-Reparatur-Tool "NameToUnix"
 
 Ein leistungsstarkes Kommandozeilen-Tool zum Bereinigen von Dateinamen gemäß Linux-Konventionen.
 Es funktioniert unter Linux (und MacOS, nicht getestet). 
