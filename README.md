@@ -1,7 +1,7 @@
 # Dateinamen-Reparatur-Tool "NameToUnix"
 
 Ein leistungsstarkes Kommandozeilen-Tool zum Bereinigen von Dateinamen gemäß Linux-Konventionen.
-Es funktioniert unter Linux (und solle auch unter MacOS klappen, dort habe ich es aber nicht getestet). 
+Es funktioniert unter Linux (und sollte auch unter MacOS laufen, dort habe ich es aber nicht getestet). 
 Das Programm ist sinnvoll, wenn viele Dateinamen z. B. nach einem Download und Entpacken von Zip-Dateien aus Windows-Dateisystemen 
 Leerzeichen oder Sonderzeichen enthalten. Es erspart enorm viel Zeit durch automatisches Ersetzen der störenden Zeichen. 
 
