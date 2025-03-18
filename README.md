@@ -58,8 +58,8 @@ NameToUnix --modify-root /pfad/zu/dateien
 
 ## Konfiguration
 
-Erstelle eine Datei `.NameToUnix.conf` im Arbeitsverzeichnis mit folgendem Inhalt:
-(alternativ: ~/.config/NameToUnix/config.toml)
+Erstelle eine Datei `.NameToUnix.conf` im Arbeitsverzeichnis z. B. mit folgendem Inhalt 
+(alternativ `~/.config/NameToUnix/config.toml`):
 
 ```toml
 [replacements]
