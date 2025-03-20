@@ -23,8 +23,8 @@ NameToUnix/
 │   ├── cli.rs               # CLI-Argumente und Parsing
 │   ├── config.rs            # Konfigurationsverwaltung
 │   └── sanitizer.rs         # Kernlogik zur Dateinamenbereinigung
-├── index.md                 # diese Datei
-├── info.md                  # Infos über dieses Release
+├── index.md                 # diese Datei (german)
+├── release.md               # Infos über dieses Release (german)
 └── LICENSE                  # Lizenzinformationen
 
 ## Hinweise zur Nutzung
