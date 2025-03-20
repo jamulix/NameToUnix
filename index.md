@@ -10,23 +10,23 @@ Das Ziel ist es, diese unkonventionellen Dateinamen rekursiv und automatisch sin
 
 ```text
 NameToUnix/
-├── Cargo.toml               # Projektmetadaten und Abhängigkeiten
-├── Cargo.lock               # Exakte Versionen der Abhängigkeiten (automatisch generiert)
-├── .gitignore               # Dateien, die von Git ignoriert werden sollen
-├── .NameToUnix.conf         # Konfigurationsdatei (Übersetzungsregeln: 'foo' = 'bar')
-├── README.md                # Projektdokumentation
-├── CONTRIBUTING.md          # Contribute-Dokumentation
 ├── .github/                 # CI/CD und GitHub-spezifische Dateien
 │   └── workflows/
 │       └── build.yaml       # GitHub Actions Workflow für Build and Release
+├── test/                    # enthält test-Verzeichnis Skript
+│   └── create_test_tree.sh  # Bash-Skript erzeugt ein skurriles Testverzeichnis
 ├── src/                     # Quellcode-Verzeichnis
 │   ├── main.rs              # Haupteinstiegspunkt (bereits vorhanden)
 │   ├── cli.rs               # CLI-Argumente und Parsing
 │   ├── config.rs            # Konfigurationsverwaltung
 │   └── sanitizer.rs         # Kernlogik zur Dateinamenbereinigung
+├── .NameToUnix.conf         # Konfigurationsdatei (Übersetzungsregeln: 'foo' = 'bar')
+├── CONTRIBUTING.md          # Contribute-Dokumentation
+├── Cargo.toml               # Projektmetadaten und Abhängigkeiten
+├── LICENSE                  # Lizenzinformationen
+├── README.md                # Projektdokumentation
 ├── index.md                 # diese Datei (german)
-├── release.md               # Infos über dieses Release (german)
-└── LICENSE                  # Lizenzinformationen
+└── release.md               # Infos über dieses Release (german)
 ```
 
 ## Hinweise zur Nutzung
