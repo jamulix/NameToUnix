@@ -1,0 +1,1 @@
+/home/dschlueter/Downloads/NameToUnix/target/release/NameToUnix: /home/dschlueter/Downloads/NameToUnix/src/cli.rs /home/dschlueter/Downloads/NameToUnix/src/config.rs /home/dschlueter/Downloads/NameToUnix/src/main.rs /home/dschlueter/Downloads/NameToUnix/src/sanitizer.rs
