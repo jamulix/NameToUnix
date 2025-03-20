@@ -8,6 +8,7 @@ Das Ziel ist es, diese unkonventionellen Dateinamen rekursiv und automatisch sin
 
 ## Inhaltsverzeichnis
 
+```text
 NameToUnix/
 ├── Cargo.toml               # Projektmetadaten und Abhängigkeiten
 ├── Cargo.lock               # Exakte Versionen der Abhängigkeiten (automatisch generiert)
@@ -26,6 +27,7 @@ NameToUnix/
 ├── index.md                 # diese Datei (german)
 ├── release.md               # Infos über dieses Release (german)
 └── LICENSE                  # Lizenzinformationen
+```
 
 ## Hinweise zur Nutzung
 Um dieses Projekt zu nutzen, folge bitte den Anweisungen in der [README -Datei](README.md).
