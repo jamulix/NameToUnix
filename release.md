@@ -1,29 +1,6 @@
-## Übersicht: Projekt_Struktur.txt
+## Release 0.1.0   2025/03/18
 
-```text
-NameToUnix/
-├── Cargo.toml              # Projektmetadaten und Abhängigkeiten
-├── Cargo.lock              # Exakte Versionen der Abhängigkeiten (automatisch generiert)
-├── .gitignore              # Dateien, die von Git ignoriert werden sollen
-├── README.md               # Projektdokumentation
-├── CONTRIBUTING.md         # Mitarbeiten-Dokumentation
-├── LICENSE                 # Lizenzinformationen
-├── .NameToUnix.conf        # Konfigurationsdatei (Übersetzungsregeln: 'foo' = 'bar') 
-├── .github/                # CI/CD und GitHub-spezifische Dateien
-│   └── workflows/          # Kompilier-Anweisungen
-│       └── build.yaml      # GitHub Actions Workflow für Build und Release
-├── src/                    # Quellcode-Verzeichnis
-│   ├── main.rs             # Haupteinstiegspunkt (bereits vorhanden)
-│   ├── cli.rs              # CLI-Argumente und Parsing
-│   ├── config.rs           # Konfigurationsverwaltung
-│   └── sanitizer.rs        # Kernlogik zur Dateinamenbereinigung
-├── Infotest.txt            # Infotext-Datei, Dokumentation, die vieles erklärt
-└── test/                   # Test-Programm
-    └── create_test_tree.sh # Shell-Skript erzeugt 21 Test-Verzeichnisse mit 400 Dateien mit skurrilen Namen
-
-```
-
-Lass mich die wichtigsten zusätzlichen Dateien genauer beschreiben:
+Lass mich die wichtigsten Dateien genauer beschreiben:
 
 ## 1. README.md
 
