@@ -127,7 +127,8 @@ Create a file `.NameToUnix.conf` in your personal working directory, e.g. with t
 Dies ist eine Beispielkonfiguration. Du kannst Die Datei nach Belieben anpassen.
 The above is an example configuration. You can customize the file as you wish.
 
-Erstelle eine Datei /etc/NameToUnix/config.toml im globalen Verzeichnis /etc z. B. mit folgendem Inhalt:
+Du solltest auch eine zentrale Konfigurationsdatei /etc/NameToUnix/config.toml im globalen Verzeichnis /etc erstellen (Beispiel):
+You should also create a central configuration file /etc/NameToUnix/config.toml in the global directory /etc (example):
 
 ```toml
 # /etc/NameToUnix/config.toml
