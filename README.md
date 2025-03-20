@@ -127,7 +127,7 @@ Create a file `.NameToUnix.conf` in the working directory, e.g. with the followi
 "ß" = "ss"
 ```
 Dies ist eine Beispielkonfiguration. Du kannst Die Datei nach Belieben anpassen.
-The above is an xample configuration. You can customize the file as you wish.
+The above is an example configuration. You can customize the file as you wish.
 
 ### Verwendung von NameToUnix
 
