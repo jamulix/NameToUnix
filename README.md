@@ -40,7 +40,6 @@ Dies ist mein erstes Programm in Rust. (Bitte seid gnädig.)
 - Unterstützt Ausschlussmuster für bestimmte Datei-Muster/Verzeichnis-Muster
 
 ## Installation
-
 ```bash
 git clone https://github.com/jamulix/NameToUnix.git       # Download repository
 cd NameToUnix                                             # Change to download directory
@@ -107,7 +106,6 @@ Erstelle eine Datei `.NameToUnix.conf` im persönlichen Arbeitsverzeichnis z. B.
 
 Create a file `.NameToUnix.conf` in your personal working directory, e.g. with the following content 
 (alternatively `~/.config/NameToUnix/config.toml`):
-
 
 ```toml
 [replacements]
