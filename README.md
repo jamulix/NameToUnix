@@ -140,7 +140,20 @@ You should also create a central configuration file /etc/NameToUnix/config.toml 
 #
 # Dadurch werden in den Dateinamen alle "foo" durch "bar" ersetzt, und "old" durch "neu".
 # WICHTIG: Die hartcodierten Transformationen sind aber immer vorrangig und lassen sich auch nicht rückgängig machen.
-# Die persönlichen Einstellungen überschreiben diese Einstellungen.  
+# Die persönlichen Einstellungen überschreiben diese Einstellungen.
+# VORSICHT! Zuerst mit 'NameToUnix -n <path>' testen
+# --------------------------------------------
+# In this file, any additional key-value pairs can be stored under [replacements],
+# which are replaced in the file master name. For example:
+#
+# [replacements]
+# “foo” = “bar”
+# “old” = “new”
+#
+# This replaces all “foo” with “bar” and “old” with “new” in the file names.
+# IMPORTANT: The hard-coded transformations always have priority and cannot be undone.
+# The personal settings overwrite these settings.  
+
 # BE CAREFUL! First test with 'NameToUnix -n <path>' (Just display the changes)
 
 [replacements]
