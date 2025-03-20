@@ -40,20 +40,25 @@ Dies ist mein erstes Programm in Rust. (Bitte seid gnädig.)
 - Unterstützt Ausschlussmuster für bestimmte Datei-Muster/Verzeichnis-Muster
 
 ## Installation
+
+Die ausführbare Datei wird unter `target/release/NameToUnix` erstellt. Du solltest sie mit 'sudo cp target/release/NameToUnix /usr/local/bin/' kopieren. Sie ist dann für alle User verfügbar. Denke daran, die Konfiguationsdatei (s. u.) ebenfalls zu kopieren. Sie kann für jeden User individuell angepasst werden, wenn sie im home-Verzeichnis des Users liegt.
+
+The executable file is created under `target/release/NameToUnix`. You should copy it with 'sudo cp target/release/NameToUnix /usr/local/bin/'. It is then available for all users. Remember to copy the configuration file (see below) as well. It can be customized for each user individually if it is located in the user's home directory.
+
 ```bash
 git clone https://github.com/jamulix/NameToUnix.git       # Download repository
 cd NameToUnix                                             # Change to download directory
 cargo build --release                                     # Build binary
 sudo cp target/release/NameToUnix /usr/local/bin/         # copy binary to local bin directory
+
+# Globale Einstellungen / Global Settings
 sudo mkdir -p /etc/NameToUnix/                            # Create global config directory for NameToUnix in /etc
 sudo cp .NameToUnix.conf  /etc/NameToUnix/config.toml     # Copy config file to this global directory
+
+# Lokale Einstellungen / Local settings
 mkdir -p ~/.config/NameToUnix/                            # Create a personal config directory for NameToUnix 
 cp .NameToUnix.conf ~/.config/NameToUnix/config.toml      # Copy config file to this personal directory
 ```
-
-Die ausführbare Datei wird dann unter `target/release/NameToUnix` erstellt. Du solltest sie mit 'sudo cp target/release/NameToUnix /usr/local/bin/' kopieren. Sie ist dann für alle User verfügbar. Denke daran, die Konfiguationsdatei (s. u.) ebenfalls zu kopieren. Sie kann für jeden User individuell angepasst werden, wenn sie im home-Verzeichnis des Users liegt.
-
-The executable file is then created under `target/release/NameToUnix`. You should copy it with 'sudo cp target/release/NameToUnix /usr/local/bin/'. It is then available for all users. Remember to copy the configuration file (see below) as well. It can be customized for each user individually if it is located in the user's home directory.
 
 ## Usage
 
