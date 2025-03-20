@@ -1,9 +1,10 @@
-# Filename Repair Tool 
+# Filename Repair Tool for Linux
 # "NameToUnix"
 
+(german and english)
+
 A powerful command line tool for cleaning up file names according to Linux conventions.
-It works under Linux (and should also work under MacOS, but I have not tested it there). 
-The program is useful if many file names, e.g. after downloading and unpacking zip files from Windows file systems 
+It works under Linux. The program is useful if many file names, e.g. after downloading and unpacking zip files from Windows file systems 
 contain spaces or special characters. It saves an enormous amount of time by automatically replacing the offending characters. 
 
 I have been using a similar program - a Perl script ***name2unix.pl*** - for about 15 years. It has saved me many, many hours of mindless renaming work. Now I'm learning Rust and wanted to write a useful command line application.  ***NameToUnix*** is the result. 
@@ -11,8 +12,7 @@ I have been using a similar program - a Perl script ***name2unix.pl*** - for abo
 This is my first program in Rust. 
 
 Ein leistungsstarkes Kommandozeilen-Tool zum Bereinigen von Dateinamen gemäß Linux-Konventionen.
-Es funktioniert unter Linux (und sollte auch unter MacOS laufen, dort habe ich es aber nicht getestet). 
-Das Programm ist sinnvoll, wenn viele Dateinamen z. B. nach einem Download und Entpacken von Zip-Dateien aus Windows-Dateisystemen 
+Es funktioniert unter Linux. Das Programm ist sinnvoll, wenn viele Dateinamen z. B. nach einem Download und Entpacken von Zip-Dateien aus Windows-Dateisystemen 
 Leerzeichen oder Sonderzeichen enthalten. Es erspart enorm viel Zeit durch automatisches Ersetzen der störenden Zeichen. 
 
 Ich benutze ein ähnliches Programm - ein Perl-Skript ***name2unix.pl*** - seit ca. 15 Jahren. Es hat mir schon viele, viele Stunden stumpfsinniger Umbenennungs-Arbeit erspart. Nun bin ich dabei, Rust zu lernen und wollte eine sinnvolle Kommandozeilenanwendung schreiben.  ***NameToUnix*** ist dabei herausgekommen.
@@ -29,6 +29,8 @@ Dies ist mein erstes Programm in Rust.
 - Provides preview mode without actual changes
 - Allows user-defined replacement rules via configuration file
 - Supports exclusion patterns for specific file patterns/directory patterns
+
+---
 
 - Ersetzt Leerzeichen und Sonderzeichen in Datei- und Verzeichnisnamen durch Unterstriche
 - Konvertiert deutsche Umlaute in ihre ASCII-Pendants (ä → ae, usw.)
@@ -124,7 +126,8 @@ Create a file `.NameToUnix.conf` in the working directory, e.g. with the followi
 "ü" = "ue"
 "ß" = "ss"
 ```
-Du kannst Die Datei nach Belieben anpassen. You can customize the file as you wish.
+Dies ist eine Beispielkonfiguration. Du kannst Die Datei nach Belieben anpassen.
+The above is an xample configuration. You can customize the file as you wish.
 
 ### Verwendung von NameToUnix
 
