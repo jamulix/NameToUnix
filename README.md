@@ -9,7 +9,7 @@ contain spaces or special characters. It saves an enormous amount of time by aut
 
 I have been using a similar program - a Perl script - for about 15 years. It has saved me many, many hours of mindless renaming work. Now I'm learning Rust and wanted to write a useful command line application.  ***NameToUnix*** is the result. 
 
-This is my first program in Rust. 
+This is my first program in Rust. (Please have mercy on me.)
 
 Ein leistungsstarkes Kommandozeilen-Tool zum Bereinigen von Dateinamen gemäß Linux-Konventionen.
 Es funktioniert unter Linux. Das Programm ist sinnvoll, wenn viele Dateinamen z. B. nach einem Download und Entpacken von Zip-Dateien aus Windows-Dateisystemen 
@@ -17,7 +17,7 @@ Leerzeichen oder Sonderzeichen enthalten. Es erspart enorm viel Zeit durch autom
 
 Ich benutze ein ähnliches Programm - ein Perl-Skript - seit ca. 15 Jahren. Es hat mir schon viele, viele Stunden stumpfsinniger Umbenennungs-Arbeit erspart. Nun bin ich dabei, Rust zu lernen und wollte eine sinnvolle Kommandozeilenanwendung schreiben.  ***NameToUnix*** ist dabei herausgekommen.
 
-Dies ist mein erstes Programm in Rust. 
+Dies ist mein erstes Programm in Rust. (Bitte seid gnädig.)
 
 (c) 2025 Dieter Schlüter <dieter.schlueter@linix.de>
 
