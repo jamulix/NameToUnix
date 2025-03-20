@@ -41,18 +41,15 @@ Dies ist mein erstes Programm in Rust. (Bitte seid gnädig.)
 
 ## Installation
 
-### Über Cargo
-
 ```bash
-cargo install NameToUnix
-```
-
-### Manueller Build
-
-```bash
-git clone https://github.com/jamulix/NameToUnix.git
-cd NameToUnix
-cargo build --release
+git clone https://github.com/jamulix/NameToUnix.git       # Download repository
+cd NameToUnix                                             # Change to download directory
+cargo build --release                                     # Build binary
+sudo cp target/release/NameToUnix /usr/local/bin/         # copy binary to local bin directory
+sudo mkdir -p /etc/NameToUnix/                            # Create global config directory for NameToUnix in /etc
+sudo cp .NameToUnix.conf  /etc/NameToUnix/config.toml     # Copy config file to this global directory
+mkdir -p ~/.config/NameToUnix/                            # Create a personal config directory for NameToUnix 
+cp .NameToUnix.conf ~/.config/NameToUnix/config.toml      # Copy config file to this personal directory
 ```
 
 Die ausführbare Datei wird dann unter `target/release/NameToUnix` erstellt. Du solltest sie mit 'sudo cp target/release/NameToUnix /usr/local/bin/' kopieren. Sie ist dann für alle User verfügbar. Denke daran, die Konfiguationsdatei (s. u.) ebenfalls zu kopieren. Sie kann für jeden User individuell angepasst werden, wenn sie im home-Verzeichnis des Users liegt.
@@ -105,11 +102,12 @@ NameToUnix --modify-root /pfad/zu/dateien
 
 ## Configuration File / Konfiguration
 
-Erstelle eine Datei `.NameToUnix.conf` im Arbeitsverzeichnis z. B. mit folgendem Inhalt 
+Erstelle eine Datei `.NameToUnix.conf` im persönlichen Arbeitsverzeichnis z. B. mit folgendem Inhalt 
 (alternativ `~/.config/NameToUnix/config.toml`):
 
-Create a file `.NameToUnix.conf` in the working directory, e.g. with the following content 
+Create a file `.NameToUnix.conf` in your personal working directory, e.g. with the following content 
 (alternatively `~/.config/NameToUnix/config.toml`):
+
 
 ```toml
 [replacements]
@@ -128,6 +126,30 @@ Create a file `.NameToUnix.conf` in the working directory, e.g. with the followi
 ```
 Dies ist eine Beispielkonfiguration. Du kannst Die Datei nach Belieben anpassen.
 The above is an example configuration. You can customize the file as you wish.
+
+Erstelle eine Datei /etc/NameToUnix/config.toml im globalen Verzeichnis /etc z. B. mit folgendem Inhalt:
+
+```toml
+# /etc/NameToUnix/config.toml
+# --------------------------------------------
+# In dieser Datei können beliebige zusätzliche Schlüssel-Werte-Paare unter [replacements] hinterlegt werden,
+# die im Dateistammnamen ersetzt werden. Zum Beispiel:
+#
+# [replacements]
+# "foo" = "bar"
+# "old" = "neu"
+#
+# Dadurch werden in den Dateinamen alle "foo" durch "bar" ersetzt, und "old" durch "neu".
+# WICHTIG: Die hartcodierten Transformationen sind aber immer vorrangig und lassen sich auch nicht rückgängig machen.
+# Die persönlichen Einstellungen überschreiben diese Einstellungen.  (Be careful! First test with NameToUnix -n <path>)
+
+[replacements]
+".." = "."
+"_·_" = "_-_"
+".-_" = "_-_"
+# "" = ""          # bewirkt nichts / Dummy entry
+```
+
 
 ### Verwendung von NameToUnix
 
