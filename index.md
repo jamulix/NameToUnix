@@ -22,6 +22,7 @@ NameToUnix/
 │   └── sanitizer.rs         # Kernlogik zur Dateinamenbereinigung
 ├── .NameToUnix.conf         # Konfigurationsdatei (Übersetzungsregeln: 'foo' = 'bar')
 ├── CONTRIBUTING.md          # Contribute-Dokumentation
+├── Cargo.lock               # Abhängigkeiten
 ├── Cargo.toml               # Projektmetadaten und Abhängigkeiten
 ├── LICENSE                  # Lizenzinformationen
 ├── README.md                # Projektdokumentation
